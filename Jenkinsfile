@@ -9,6 +9,11 @@ pipeline {
         echo 'Hello World'
       }
     }
+    stage('Example') {
+      steps {
+        sh 'mvn --version'
+      }
+    }
   }
   post {
     always {
